@@ -37,12 +37,11 @@
 ## 결과 
 ### **Top Module 의 DUT/TestBench Code 및 Waveform 검증**
 
-`Please fill up your source`
+![](https://github.com/tjrwldnjs/LogicDesign/blob/master/practice06/06%EC%9B%A8%EC%9D%B4%EB%B8%8C.PNG)
 
 ### **FPGA 동작 사진 (3개- 일반, Q1, Q2)**
 
-`Please fill up your source`
-![](https://github.com/tjrwldnjs/LogicDesign/blob/master/practice06/06%EC%9B%A8%EC%9D%B4%EB%B8%8C.PNG)
+
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTE4NTg0NjY5ODksMTAyNTU2NzMyMV19
 -->
