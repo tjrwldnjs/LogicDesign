@@ -40,7 +40,7 @@
 ![](https://github.com/tjrwldnjs/LogicDesign/blob/master/practice06/06%EC%9B%A8%EC%9D%B4%EB%B8%8C.PNG)
 
 ### **FPGA 동작 사진 (3개- 일반, Q1, Q2)**
-
+![](https://github.com/tjrwldnjs/LogicDesign/blob/master/practice06/6E645D30-42F5-49C9-8556-BC222C88ABFF.jpeg)
 
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTE4NTg0NjY5ODksMTAyNTU2NzMyMV19
