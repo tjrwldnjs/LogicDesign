@@ -11,18 +11,21 @@
 : 6개의 LED 중 가장 오른쪽 2개의 LED에 1초간격으로 0~59까지 증가하는 Counter 값 Display
 
 : NCO(Numerical Controlled Oscillator) 입력 바꿔서 4초 간격으로 증가하는 코드 테스트
+
 ## 퀴즈
+
  ### 아래 코드 일부를 수정하여 다음을 구하시오 
+ 
  ```verilog 
  wire  [41:0] six_digit_seg; 
- assign       six_digit_seg = { 4{7'b0000000}, seg_left, seg_right }
+ assign       six_digit_seg = { 4{7'b0000000}, seg_left, seg_right };
   ``` 
   > Q1 - 고정 LED (왼쪽 4개) AAAA 출력 
   : `AA_AA_00`, `AA_AA_01`, `AA_AA_02`, … 순으로 LED 변경
   
  ```verilog 
  wire  [41:0] six_digit_seg; 
- assign       six_digit_seg = { 4{7'b1110111}, seg_left, seg_right }
+ assign       six_digit_seg = { 4{7'b1110111}, seg_left, seg_right };
   ``` 
 
 > Q2 - 고정 LED 없이 2개의 LED 단위로 1초 Counter 값 표시
@@ -30,7 +33,7 @@
  
  ```verilog 
  wire  [41:0] six_digit_seg; 
- assign       six_digit_seg = { 3{ seg_left, seg_right } }
+ assign       six_digit_seg = { 3{ seg_left, seg_right } };
   ``` 
 
 
@@ -41,6 +44,9 @@
 
 ### **FPGA 동작 사진 (3개- 일반, Q1, Q2)**
 
+![](https://github.com/tjrwldnjs/LogicDesign/blob/master/practice06/E8FB7508-3033-43F8-AA02-EF0026C4E2E8.jpeg)
+![](https://github.com/tjrwldnjs/LogicDesign/blob/master/practice06/9401DC9B-6A3F-47BD-BD72-AA481C1E20CB.jpeg)
+![](https://github.com/tjrwldnjs/LogicDesign/blob/master/practice06/6E645D30-42F5-49C9-8556-BC222C88ABFF.jpeg)
 
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTE4NTg0NjY5ODksMTAyNTU2NzMyMV19
