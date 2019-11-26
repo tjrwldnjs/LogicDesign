@@ -49,5 +49,6 @@
 ![](https://github.com/tjrwldnjs/LogicDesign/blob/master/practice06/6E645D30-42F5-49C9-8556-BC222C88ABFF.jpeg)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTg0NjY5ODksMTAyNTU2NzMyMV19
+eyJoaXN0b3J5IjpbNjg5NjkyMzg2LC0xODU4NDY2OTg5LDEwMj
+U1NjczMjFdfQ==
 -->
