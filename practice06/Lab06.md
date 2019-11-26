@@ -1,5 +1,5 @@
-# Lab 06
- Lab 09
+# Lab 09
+
 ## 실습 내용
 ### **NEC 적외선 통신 규약 (NEC Infrared Transmission Protocol) 을 이용하여 리모컨 송신 신호 받기**
 
@@ -105,6 +105,6 @@ endmodule
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTg1NTk0MDk4LC0xODU4NDY2OTg5LDEwMj
-U1NjczMjFdfQ==
+eyJoaXN0b3J5IjpbLTk0NDkzNzUzMSw1ODU1OTQwOTgsLTE4NT
+g0NjY5ODksMTAyNTU2NzMyMV19
 -->
