@@ -664,20 +664,20 @@ wire  [5:0] o_sec ;
 wire        o_alarm_sinho;                  
 
 minsec    u_minsec(
-                    .i_min_clk        (o_min_clk),
-                    .i_sec_clk        (o_sec_clk),
-                    .i_alarm_en       (o_alarm_en),
-                    .i_alarm_min_clk  (o_alarm_min_clk),
-                    .i_alarm_sec_clk  (o_alarm_sec_clk),
-                    .i_mode           (o_mode),
-                    .i_position       (o_position),
-                    .clk              (clk),
-		                .rst_n            (rst_n),
-                    .o_max_hit_min    (o_max_hit_min),
-                    .o_max_hit_sec    (o_max_hit_sec),
-                    .o_min            (o_min),
-                    .o_sec            (o_sec),
-                    .o_alarm          (o_alarm_sinho));
+                    .i_min_clk        (o_min_clk	),
+                    .i_sec_clk        (o_sec_clk	),
+                    .i_alarm_en       (o_alarm_en	),
+                    .i_alarm_min_clk  (o_alarm_min_clk	),
+                    .i_alarm_sec_clk  (o_alarm_sec_clk	),
+                    .i_mode           (o_mode		),
+                    .i_position       (o_position	),
+                    .clk              (clk		),
+		    .rst_n            (rst_n		),
+                    .o_max_hit_min    (o_max_hit_min	),
+                    .o_max_hit_sec    (o_max_hit_sec	),
+                    .o_min            (o_min		),
+                    .o_sec            (o_sec		),
+                    .o_alarm          (o_alarm_sinho	));
                     
 wire   [3:0] o_left0 ;
 wire   [3:0] o_right0; 
@@ -699,26 +699,26 @@ double_fig_sep u1_dfs (
 wire   [6:0] o_seg0;
 
 fnd_dec u0_fnd_dec (
-                    .o_seg      ( o_seg0    ),
-                    .i_num      ( o_left0         )); 
+                    .o_seg      ( o_seg0    	),
+                    .i_num      ( o_left0   	)); 
                     
 wire   [6:0] o_seg1;                    
 
 fnd_dec u1_fnd_dec (
-                    .o_seg      ( o_seg1     ),
-                    .i_num      ( o_right0         ));
+                    .o_seg      ( o_seg1     	),
+                    .i_num      ( o_right0	));
 
 wire   [6:0] o_seg2; 
 
 fnd_dec u2_fnd_dec (
-                    .o_seg      ( o_seg2     ),
-                    .i_num      ( o_left1         ));
+                    .o_seg      ( o_seg2	),
+                    .i_num      ( o_left1	));
 
 wire   [6:0] o_seg3; 
 
 fnd_dec u3_fnd_dec (
-                    .o_seg      ( o_seg3    ),
-                    .i_num      ( o_right1         ));
+                    .o_seg      ( o_seg3	),
+                    .i_num      ( o_right1	));
                     
 
 wire   [6:0]  o_seg           ; 
@@ -734,7 +734,7 @@ led_disp u_led_disp (
                       .o_seg_dp         (  o_seg_dp        ),
                       .o_seg_enb        (  o_seg_enb       ),
                       .i_six_digit_seg  ( i_six_digit_seg  ),
-                      .i_six_dp         ( o_mode             ),
+                      .i_six_dp         ( o_mode           ),
                       .clk              ( clk              ),
                       .rst_n            ( rst_n            ));
 
