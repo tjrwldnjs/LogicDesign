@@ -13,7 +13,8 @@ wire [5:0] out ;
 initial clk = 1'b0; 
 always #(tCK/2) clk = ~clk;
 
-cnt6 dut(      .out ( out ), 
+cnt6 dut(      
+              .out ( out ), 
               .clk ( clk ),  
               .rst_n ( rst_n ));
 
@@ -38,12 +39,13 @@ wire [5:0] out ;
 initial clk = 1'b0; 
 always #(tCK/2) clk = ~clk;
 
-top_cnt dut( .out ( out ), 
-             .num ( 32'd50000000 ), 
-             .clk ( clk ), 
-             .rst_n ( rst_n )); 
+top_cnt dut( 
+              .out ( out ), 
+              .num ( 32'd50000000 ), 
+              .clk ( clk ), 
+              .rst_n ( rst_n )); 
  initial begin
-  #(0*tCK) rst_n = 1'b0;
+  #(0*tCK) rst_n  = 1'b0;
    #(1*tCK) rst_n = 1'b1; 
    #(100000000*tCK) $finish; 
    
