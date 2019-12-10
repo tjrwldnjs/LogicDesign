@@ -10,14 +10,16 @@ initial		         clk = 1'b0	;
 always	   #(100)	 clk = ~clk	;  
   
  
-block     dut_1  (.q    ( q1  ),
-                  .d    ( d   ),
-                  .clk  ( clk ));
+block     dut_1  (
+					.q    ( q1  ),
+					.d    ( d   ),
+					.clk  ( clk ));
                
                
-nonblock  dut_2  (.q    ( q2  ),
-                  .d    ( d   ),
-                  .clk  ( clk ));
+nonblock  dut_2  (
+					.q    ( q2  ),
+					.d    ( d   ),
+					.clk  ( clk ));
                   
 
 initial begin
@@ -38,4 +40,4 @@ initial begin
 	$finish;
 
 	end
-endmodule  
+endmodule  	
