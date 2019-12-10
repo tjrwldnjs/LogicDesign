@@ -8,11 +8,11 @@
  parameter tCK = 1000/50 ;  
  
  
-reg clk ;  
-reg rst_n ;  
+reg 			clk 		;  
+reg 			rst_n 		;  
 
 wire	[5:0]	o_seg_enb	;
-wire			    o_seg_dp	;
+wire			o_seg_dp	;
 wire	[6:0]	o_seg		;
  
  
