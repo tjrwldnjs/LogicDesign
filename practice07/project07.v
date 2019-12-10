@@ -421,30 +421,29 @@ wire o_max_hit_sec;
 wire o_max_hit_min;
 
 controller u_ctrl(
-                   .o_mode          ( o_mode),
-		               .o_position      ( o_position),
-		               .o_sec_clk       (o_sec_clk),
-		               .o_min_clk       (o_min_clk),
-	                 .i_max_hit_sec   (o_max_hit_sec),
-		               .i_max_hit_min   (o_max_hit_min),
-	                 .i_sw0           (i_sw0),
-		               .i_sw1           (i_sw1),
-		               .i_sw2           (i_sw2),
-		               .clk             (clk),
-		               .rst_n           (rst_n));
+                   	.o_mode          (	o_mode		),
+			.o_position      (	o_position	),
+			.o_sec_clk       (	o_sec_clk	),
+			.o_min_clk       (	o_min_clk	),
+			.i_max_hit_sec   (	o_max_hit_sec	),
+			.i_max_hit_min   (	o_max_hit_min	),
+			.i_sw0           (	i_sw0		),
+			.i_sw2           (	i_sw2		),
+			.clk             (	clk		),
+			.rst_n           (	rst_n		));
                    
 wire  [5:0] o_min ;
 wire  [5:0] o_sec ;                   
 
 minsec    u_minsec(
-                    .i_min_clk      (o_min_clk),
-                    .i_sec_clk      (o_sec_clk),
-                    .clk            (clk),
-		                .rst_n          (rst_n),
-                    .o_max_hit_min  (o_max_hit_min),
-                    .o_max_hit_sec  (o_max_hit_sec),
-                    .o_min          (o_min),
-                    .o_sec          (o_sec));
+			.i_min_clk      (	o_min_clk	),
+			.i_sec_clk      (	o_sec_clk	),
+			.clk            (	clk		),
+			.rst_n          (	rst_n		),
+			.o_max_hit_min  (	o_max_hit_min	),
+			.o_max_hit_sec  (	o_max_hit_sec	),
+			.o_min          (	o_min		),
+			.o_sec          (	o_sec		));
                     
 wire   [3:0] o_left0 ;
 wire   [3:0] o_right0; 
@@ -466,26 +465,26 @@ double_fig_sep u1_dfs (
 wire   [6:0] o_seg0;
 
 fnd_dec u0_fnd_dec (
-                    .o_seg      ( o_seg0    ),
-                    .i_num      ( o_left0         )); 
+                    .o_seg      ( o_seg0	),
+                    .i_num      ( o_left0	)); 
                     
 wire   [6:0] o_seg1;                    
 
 fnd_dec u1_fnd_dec (
-                    .o_seg      ( o_seg1     ),
-                    .i_num      ( o_right0         ));
+                    .o_seg      ( o_seg1	),
+                    .i_num      ( o_right0 	));
 
 wire   [6:0] o_seg2; 
 
 fnd_dec u2_fnd_dec (
-                    .o_seg      ( o_seg2     ),
-                    .i_num      ( o_left1         ));
+                    .o_seg      ( o_seg2 	),
+                    .i_num      ( o_left1	));
 
 wire   [6:0] o_seg3; 
 
 fnd_dec u3_fnd_dec (
-                    .o_seg      ( o_seg3    ),
-                    .i_num      ( o_right1         ));
+                    .o_seg      ( o_seg3	),
+                    .i_num      ( o_right1	));
                     
 
 wire   [6:0]  o_seg           ; 
