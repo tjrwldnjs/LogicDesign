@@ -14,20 +14,20 @@ module   tb_mux4to1;
  wire   out3;
  
  
- mux4to1_inst     dut_1     ( .out    (out1      ),
-                              .in0    (in0       ),
-                              .in1    (in1       ),
-                              .in2    (in2       ),
-                              .in3    (in3       ),
-                              .sel    (sel       ));
+ mux4to1_inst     dut_1     ( .out    (   out1      ),
+                              .in0    (   in0       ),
+                              .in1    (   in1       ),
+                              .in2    (   in2       ),
+                              .in3    (   in3       ),
+                              .sel    (   sel       ));
                                                  
- mux4to1_if       dut_2     ( .out    (out2      ),
-                              .in    ({in3, in2, in1, in0}       ),
-                              .sel    (sel       ));
+ mux4to1_if       dut_2     ( .out        (     out2                          ),
+                              .in         (     {in3, in2, in1, in0}          ),
+                              .sel        (     sel                           ));
                       
- mux4to1_case     dut_3     ( .out    (out3      ),
-                              .in    ({in3, in2, in1, in0}       ),
-                              .sel    (sel       )); 
+ mux4to1_case     dut_3     ( .out        (     out3                          ),
+                              .in         (     {in3, in2, in1, in0}          ),
+                              .sel        (     sel                           )); 
                         
 initial begin
   
