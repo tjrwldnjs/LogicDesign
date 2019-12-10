@@ -81,7 +81,7 @@ task	L_CODE;
 	begin
 				i_ir_rxb	= 1'b0;
 		#(9000000)	i_ir_rxb	= 1'b1;
-		#(4500000)	;
+		#(4500000)			      ;
 	end
 endtask
 
